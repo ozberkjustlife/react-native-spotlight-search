@@ -8,23 +8,20 @@
     "index.js",
     "index.d.ts",
     "ios/*",
-    "react-native-spotlight-search.podspec",
-    "plugin/*",
-    "app.plugin.js"
+    "react-native-spotlight-search.podspec"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "yarn build:plugin",
-    "build:plugin": "tsc --build plugin"
+    "build:plugin": "echo 'skip build: plugin source not required at runtime'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdmunro/react-native-spotlight-search.git"
+    "url": "git+https://github.com/ozberkjustlife/react-native-spotlight-search.git"
   },
   "author": "James Munro <me@jdmunro.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jdmunro/react-native-spotlight-search/issues"
+    "url": "https://github.com/ozberkjustlife/react-native-spotlight-search/issues"
   },
   "keywords": [
     "react-native",
@@ -33,13 +30,15 @@
     "spotlight",
     "search"
   ],
-  "homepage": "https://github.com/jdmunro/react-native-spotlight-search#readme",
+  "homepage": "https://github.com/ozberkjustlife/react-native-spotlight-search#readme",
   "peerDependencies": {
     "react-native": "*"
   },
   "dependencies": {
-    "@expo/config-plugins": "^4.0.6",
-    "@types/node": "^16.11.5",
-    "typescript": "^4.4.4"
+    "@expo/config-plugins": "^4.0.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.11.5"
   }
 }
